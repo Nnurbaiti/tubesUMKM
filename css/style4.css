@@ -1,0 +1,80 @@
+@import "style1.css";
+
+:root{
+    --header:#222831;
+    --colordark:#393E46;
+    --colororange:#F96D00;
+    --colorwhite:#F2F2F2;
+    }
+    
+    /* semua */
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+        box-sizing: border-box;
+        }
+        
+        header{
+            position: sticky;
+            top: 0;
+            }
+            
+        body{
+            background-color: var(--colordark);
+        }
+        
+/* Kontainer */
+    .container4{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: var(--colorwhite);
+        color: var(--colordark);
+        padding: 28px 32px;
+        overflow: hidden;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        transition: 0.6s ease-out;
+        padding-left: 90px;
+    }
+    
+    button home 
+    .button{
+        color: var(--colorwhite);
+        display: flex;
+        align-items: center;
+        transition-duration: 1s;
+        margin-top: 10px;
+    }
+    
+    .button a{
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: var(--colororange);
+        color: var(--colorwhite);
+        padding: 3px;
+        margin-right: 10px;
+    }*/
+    
+    /* tulisan teras katsu */
+    .location-info .location{
+        padding: 5px;
+        border-radius: 100%;
+        text-decoration: none;
+    }
+
+    /* tulisan button wa */
+    .button h5 .wa{
+        padding: 5px;
+        background-color: #25D366;
+        
+    }
+
+    /* footer */
+    footer .teksfooter1 ul, footer .teksfooter2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+

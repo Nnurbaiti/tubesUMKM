@@ -1,0 +1,104 @@
+@import "style1.css";
+
+
+:root{
+    --header:#222831;
+    --colordark:#393E46;
+    --colororange:#F96D00;
+    --colorwhite:#F2F2F2;
+}
+
+/* BODY */
+.variasi-menu{
+    width: 100%;
+    height: auto;
+    background-color: var(--header);
+}
+
+a{
+    color: var(--colorwhite);
+}
+
+.boxtext{
+    width: 100%;
+    display: flex;
+    background-color: var(--colororange);
+    justify-content: center;
+}
+
+.boxbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 184, 135);
+}
+
+.boxbox .boxs{
+    display: flex;
+    width: 50%;
+    height: 100px;
+    justify-content: center;
+    background-color: var(--colororange);
+}
+
+.boxtext h2{
+    padding-top: 20px;
+    height: 50px;
+}
+
+.container2{
+    display: flex;
+    width: 100%;
+    height: 320px;
+}
+
+.container2 .cardsatu{
+    width: 100%;
+    background-color: var(--colordark);
+    color: var(--colorwhite);
+    display: flex;
+    align-items: center;
+    transition-duration: 1s; /*supaya smooth*/
+}
+
+.container2 .carddua{
+    width: 100%;
+    background-color: var(--colorwhite);
+    color: var(--colordark);
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.gambar img{
+    width: 60%;
+    padding-left: 80px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.content h5{
+    padding-right: 70px;
+    letter-spacing: 10px; /*spasi*/
+    text-transform:uppercase; /*huruf besar*/
+    font-size: larger;
+}
+
+.cardsatu:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    transition-duration: 1s;
+}
+
+.carddua:hover{
+    padding-right: 50px;
+    padding-left: 50px;
+    transition-duration: 1s;
+    border-image-width: 90px;
+
+}
+
+
+
+
+

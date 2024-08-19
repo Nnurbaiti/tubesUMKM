@@ -1,0 +1,215 @@
+:root{
+    --header:#222831;
+    --colordark:#393E46;
+    --colororange:#F96D00;
+    --colorwhite:#F2F2F2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+font-family: "Work Sans", sans-serif;
+}
+
+body{
+    background-color: var(--header);
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header{
+    position: sticky;
+    top: 0; /*sticky di atas*/
+    z-index: 1000; /* Menentukan tingkat tumpukan header */
+}
+
+.navigasi-container{
+    display: flex; 
+    align-items: center;
+    height: 70px;
+    background-color: var(--header); /*ngambil dari root*/
+}
+
+/* ukuran logo */
+.navigasi-container .logo img{
+    width: 30%;
+    margin: 0;
+}
+
+/* teks list*/
+.navigasi-container ul{
+    display: flex; /*supaya lurus dan ga ke bawah*/
+    align-items: center;
+    list-style: none;
+    width: 800px;
+}
+
+/* teks */
+.navigasi-container ul li a{
+    font-size:small;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-right: 90px;
+    border-radius: 5px;
+    color: var(--colorwhite);
+    text-decoration: none;
+}
+
+/* hover */
+.navigasi-container li a:hover{
+    color: var(--header);
+    background-color: var(--colorwhite);
+    padding: 5px;
+}
+/* END HEADER */
+
+
+/*HOME*/
+.info-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorwhite);
+}
+
+/* teks */
+.info-container .teks h4{
+    margin-left: 60px;
+    margin-bottom: 0;
+}
+
+    /* BANNER */
+    .info-container .foto img{
+        width: 100%;
+        object-fit:fill;
+    }
+
+    /* MENU */
+    .container{
+        display: flex;
+        margin-bottom: 1.5rem; /*jarak antara kotak kontainer dengan tulisan*/
+        margin-left: 50px;
+    }
+    
+    /* dalam kotak */
+    .info-container .containerMenu1{
+        width: 300px;
+        height: 110px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        justify-content: center; /*gambar di tengah*/
+        border: solid 1px var(--header);
+        flex-flow: row wrap; /*baris*/
+        margin-left: 20px;
+    }
+    
+    /* foto menu */
+    .info-container .container .containerMenu1 .pict1 img{
+        width: 40%; 
+        height: auto; 
+        padding-left: 20px;
+        justify-items: center;
+    }
+    
+    .info-container .container .containerMenu1 .pict2 img{
+        width: 40%; 
+        height: auto; 
+        padding-left: 90px;
+        padding-top: 7px;
+        justify-items: center;
+    }
+
+    
+    /* teks menu */
+    .info-container .container .containerMenu1 .konten h5{
+        background-color: var(--colordark);
+        text-align: center;
+        color: var(--colorwhite);
+        padding: 5px;
+        /* background-color: var(--colordark); */
+    }
+    
+    .info-container .container .containerMenu1 .konten h5:hover{
+        color:var(--colorwhite);
+        background-color: var(--colororange);
+    }
+    
+    /* kenali lebih lanjut */
+    .info-container .teks2 h5{
+        color:var(--colorwhite);
+        background-color: var(--colororange);
+        margin-left: 10em;
+        margin-top: 4em;
+        display: inline-block; /*sejajar dengan elemen disamping*/
+        text-align: center;
+        border-radius: 4px;
+        padding: 10px;
+        width: 150px;
+        transition: all 3s;
+        text-align: left;
+    }
+
+    .info-container .container h5:hover{
+        color:var(--header);
+        background-color: rgb(161, 161, 161);
+        padding-left: 10px;
+        text-align: right;
+        transition: 3s;
+    }
+
+    /* maps */
+    .maphome{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    /* konten map */
+    .content{
+        padding: 50px;
+    }
+
+/* END HOME */
+
+/* FOOTER */
+footer{
+    background-color: var(--header); /*ngambil dari root*/
+    color: var(--colorwhite);
+    bottom: 0; /*posisi */
+    }
+    
+    
+    footer ul{
+        list-style-type: none; /* Menghilangkan tanda list */
+
+    }
+
+footer .teksfooter{
+    justify-content: space-between;
+    display: flex;
+}
+
+footer .teksfooter1{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    }
+    
+    footer .teksfooter2{
+        display: flex;
+        justify-content:flex-end;
+        flex-flow:row wrap;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        font-size: x-small;
+}
+
+.teksfooter2 .source{
+    padding-top: 30px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+}
+/* END FOOTER */
+

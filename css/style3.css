@@ -1,0 +1,100 @@
+@import "style1.css";
+
+:root{
+    --header:#222831;
+    --colordark:#393E46;
+    --colororange:#F96D00;
+    --colorwhite:#F2F2F2;
+}
+    
+    body{
+        background-color: var(--header);
+    }
+    
+/* background */
+.pemesanan{
+    background-color: var(--colordark);
+    padding: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* kotak */
+.container3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+    
+    /* tulisan dalam kotak */
+    .text3 h1{
+        text-align: center;
+        color: var(--colorwhite);
+    }
+        
+        /* kotak abu */
+        .abu{
+            display: flex;
+            background-color: var(--colorwhite);
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 420px;
+            border-radius: 20px;
+            transition-duration: 2s;
+        }
+        
+        /* kotak putih */
+        .putih{
+            transition-duration: 2s;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            background-color: var(--colordark);
+        }
+
+        /* isi kotak paket */
+        .paket1,.paket2{
+            text-align: center;
+            justify-content: center;
+        }
+    
+
+ 
+
+    /* list kotak paket */
+    .paket1 ul,.paket2 ul{
+        color: var(--colorwhite);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        
+    /* teks*/
+    .paket1 h3, .paket2 h3{
+        text-align: center;
+        color: var(--colororange);
+    }
+    
+    /* teks wa */
+    .paket1 .wa,.paket2 .wa {
+        text-decoration: none;
+        background-color: #25D366;
+        color: var(--colorwhite);
+        padding: 5px;
+        border-radius: 20px;
+        width: 150px;
+        text-align: center;
+        transition-duration: 1.5s;
+    }
+                
+    .wa:hover{
+        background-color: var(--colorwhite);
+        color: #25D366;
+        padding: 10px;
+        transition-duration: 2s;
+    }
+
+                
